@@ -1,0 +1,97 @@
+
+
+.container{
+
+    padding: 40px;
+    margin: 40px;
+    border-radius: 35px;
+    background:black;
+    z-index: 1;
+}
+.bottomBlur {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    min-width: 50px;
+    min-width: 50px;
+    top: 928px;
+    left: 7vw;
+    border-radius: 764px;
+    background: rgba(25, 55, 109, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+  }
+
+
+.title{
+    font-size: 35px;
+    font-weight: 600;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.secondContainer{
+    display: flex;
+    align-items: center;
+    /* justify-content:space-between; */
+}
+
+.ninjaImg{
+    z-index: 1;
+}
+
+.thirdContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.forthContainer{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px;
+    width: 60%;
+    gap: 20px;
+}
+
+.fifthContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap:5px;
+}
+
+.fifthContainer h4{
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.aboutDes{
+    /* width: 600px; */
+    word-wrap: break-word;
+}
+
+.forthContainer:hover{
+    transition: 1s;
+    border-radius: 55px;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(58, 4, 254, 0.2) 0%, rgba(0,0,0)100%);
+}
+
+@media  screen and (max-width:830px) {
+    .secondContainer{
+
+        flex-direction: column-reverse;
+    }
+    .aboutDes{
+        width: 70%;
+        word-wrap: break-word;
+    }
+    .fifthContainer h4{
+        width: 62%;
+        font-size: 1.8vh;
+    }
+    
+  }

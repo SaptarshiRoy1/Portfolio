@@ -1,0 +1,74 @@
+@import url(../../vars.css);
+.ProjectSection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.Title{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+.container{
+     display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    word-wrap: wrap;
+    background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.projectTitle{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    padding: 5px;
+}
+
+.projectImg{
+    width: 270px;
+    height: 185px;
+}
+
+.projectDescription{
+    width: 270px;
+    padding-left: 5px;
+}
+
+.skills{color: aqua;
+padding:5px ;
+font-size: 18px;
+font-weight: 700;}
+
+.linkBox{
+display: flex;
+justify-content: space-around;
+/* padding: 5px; */
+}
+
+.demolink{
+    text-decoration: none;
+    color: #576cbc;
+    background: white;
+    border-radius: 15px;
+    padding: 7px;
+    font-weight: 900;
+}
+.demolink:hover{
+    background:#576cbc;
+    color:aliceblue
+}
+
+@media  screen and (max-width:830px){
+    .container{
+       flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;}
+}

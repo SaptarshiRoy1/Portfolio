@@ -1,0 +1,31 @@
+[
+    {
+        "title":"Food website",
+        "description":"Created and hosted online food delivery website (self made)",
+        "skills":"[ HTML, CSS, NodeJS ]",
+        "demo":"http://saptarshi.thats.im/",
+        "source":"https://github.com/SaptarshiRoy1/food-delivery-website"
+    },
+    {
+        "title":"FlipKart Clone",
+        "description":"Build Flipkart Clone using ReactJS MaterialUI HTML CSS (cuvette workshop)",
+        "skills":"[ HTML, CSS, ReactJS, JS ]",
+        "demo":"https://drive.google.com/file/d/1aK9Db-q3M3bNmkoAt5cQTIg9XzW5wf4z/view?usp=drive_link",
+        "source":"https://github.com/SaptarshiRoy1/FlipkartClone"
+    },
+    {
+        "title":"Weather App",
+        "description":"This react.js weather app fetch data and shows wheather, temperature, humidity ,wind speed of any place",
+        "skills":"[ ReactJS, CSS ]",
+        "demo":"https://drive.google.com/file/d/1xe4JaFIUcTEfHxrJHq7X4bfKGPD1fw66/view?usp=drive_link",
+        "source":"https://github.com/SaptarshiRoy1/weather-app-using-react"
+    },
+    {
+        "title":"Python/Java Projects",
+        "description":"Here are some python(wheather app, voice assistant, chat app) and Java(java chat app using socket,jFrame) projects",
+        "skills":"[ Python, Java ]",
+        "demo":"https://github.com/SaptarshiRoy1/PythonCodes",
+        "source":"https://github.com/SaptarshiRoy1/SaptarshiRoy1"
+    }
+
+]

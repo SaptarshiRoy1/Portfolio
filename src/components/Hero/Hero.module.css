@@ -1,0 +1,179 @@
+@import url(../../vars.css);
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lobster&display=swap');
+
+
+.sectionContainer{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 49px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.divContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+    color: var(--color-text);
+}
+
+
+/* .title{
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 33px;
+    font-family: var(--font-robot);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 70%, rgba(255, 255, 255, 0)120%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    animation-name: line;
+    animation-duration: 4s;
+    animation-iteration-count:1;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes line{
+    from{
+         width: 0%;
+
+    }
+    to{
+        width: 100%;
+    }
+} */
+
+.title
+{
+  background-image: linear-gradient(
+    -225deg,
+    #ffffff 0%,
+    #fdfbfff6 29%,
+    #139dff 67%,
+    #fff800 100%
+  );
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 33px;
+  font-family: var(--font-robot);
+
+
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear 1;
+  ;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.description{
+    font-size: 30px;
+    font-family: var(--font-robot);
+    margin-bottom: 52px;
+    
+}
+
+.description::before{
+    content: "<body>  ";
+    font-size: 24px;color: #36edfe;
+    font-family: 'La Belle Aurore', cursive;
+}
+.description::after{
+    content: "  </body>";color: #36edfe;
+    font-size: 24px;
+    font-family: 'La Belle Aurore', cursive;
+}
+
+.buttonBox{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.contact{
+    text-decoration: none;
+    /* background: var(--color-primery); */
+    background: linear-gradient(0deg, rgba(249, 3, 3, 0.215)0% ,rgba(20, 113, 243, 0.7)100%);
+    color: var(--color-text);
+    border-radius: 100px;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 17px 26px;
+    box-shadow: 0 0 13px black;
+}
+.contact:hover{
+    background: var(--color-primery);
+    box-shadow: 0 0 13px black;
+}
+
+.img{
+    width: 45%;
+    z-index: 1;
+    box-shadow: 0 0 18px black;
+    border-radius: 900px;
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes floating{
+    0%{
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(10px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+
+.topBlur {
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    min-width: 350px;
+    min-width: 350px;
+    top: -128px;
+    left: -10vw;
+    border-radius: 764px;
+    background: rgba(25, 55, 109, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+  }
+  
+  .bottomBlur {
+    position: absolute;
+    width: 70vw;
+    height: 15vw;
+    min-width: 350px;
+    min-width: 250px;
+    top: 246px;
+    right: 0vw;
+    border-radius: 764px;
+    background: rgba(25, 55, 109, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+  }
+
+  @media  screen and (max-width:830px) {
+    .sectionContainer{
+
+        flex-direction: column-reverse;
+    }
+    .divContent{
+        align-items: center;
+    }
+    
+  }
